@@ -2,11 +2,7 @@ import config from './config';
 
 const API_BASE_URL = config.apiUrl;
 
-export async function uploadImage(file, confidenceThreshold = 0.5) {
-  const formData = new FormData();
-  formData.append('file', file);
-  formData.append('confidence_threshold', confidenceThreshold);
-
+export async function uploadImage(formData) {
   const response = await fetch(`${API_BASE_URL}/detection/`, {
     method: 'POST',
     body: formData,
