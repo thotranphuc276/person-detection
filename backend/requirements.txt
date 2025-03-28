@@ -1,9 +1,13 @@
-fastapi==0.110.0
+fastapi==0.109.2
 uvicorn==0.27.1
 python-multipart==0.0.9
-sqlalchemy==2.0.28
+sqlalchemy==2.0.27
 psycopg2-binary==2.9.9
 opencv-python==4.9.0.80
-numpy==1.26.3
+numpy==1.26.4
 pydantic==2.6.1
 pydantic-settings==2.1.0
+python-dotenv==1.0.1
+elasticsearch==8.12.1
+python-json-logger==2.0.7
+elastic-transport==8.17.1

@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     CORS_ORIGINS: list = ["http://localhost:3000", "http://localhost", "http://localhost:80"]
     UPLOAD_DIR: str = "uploads"
     RESULTS_DIR: str = "results"
+    ELASTICSEARCH_URL: str = os.getenv("ELASTICSEARCH_URL", "http://localhost:9200")
     
     class Config:
         env_file = ".env"
